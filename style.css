@@ -1,12 +1,37 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap');
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
 
 *{
     margin: 0;
     padding: 0;
 }
 
+.image-button {
+    border: none;
+    background: none;
+    padding: 0;
+    cursor: pointer;
+}
+
+
+.image-button:hover {
+    animation: pulse 0.6s ease-in-out infinite;
+    opacity: 0.8;
+    transform: scale(1.05);
+    transtition: transform 0.3s opacity 0.3s;
+}
 :root {
     color-scheme: light dark;
     --bg: light-dark( white, black);
