@@ -1,0 +1,383 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    color-scheme: light dark;
+    --bg: light-dark( white, black);
+    --clr: light-dark(Black, White);
+}
+
+html:has([value="light"]:checked) {
+    color-scheme: light;
+    color: var(--clr);
+    background-color: var(--bg);
+}
+
+html:has([value="dark"]:checked) {
+    color-scheme: dark;
+    color: var(--clr);
+    background-color: var(--bg);
+}
+
+/*W3Schools.com. (n.d.-c). https://www.w3schools.com/howto/howto_css_switch.asp*/
+.switch {
+    position: relative;
+    width: 60px;
+    height: 34px;
+}
+
+/*W3Schools.com. (n.d.-c). https://www.w3schools.com/howto/howto_css_switch.asp*/
+.switch input { 
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+/*W3Schools.com. (n.d.-c). https://www.w3schools.com/howto/howto_css_switch.asp*/
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+/*W3Schools.com. (n.d.-c). https://www.w3schools.com/howto/howto_css_switch.asp*/
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+/*W3Schools.com. (n.d.-c). https://www.w3schools.com/howto/howto_css_switch.asp*/
+input:checked + .slider {
+    background-color: #990099;
+}
+
+/*W3Schools.com. (n.d.-c). https://www.w3schools.com/howto/howto_css_switch.asp*/
+input:focus + .slider {
+    box-shadow: 0 0 1px #990099;
+}
+
+/*W3Schools.com. (n.d.-c). https://www.w3schools.com/howto/howto_css_switch.asp*/
+input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+}
+
+/*W3Schools.com. (n.d.-c). https://www.w3schools.com/howto/howto_css_switch.asp*/
+.slider.round {
+    border-radius: 34px;
+}
+
+/*W3Schools.com. (n.d.-c). https://www.w3schools.com/howto/howto_css_switch.asp*/
+.slider.round:before {
+    border-radius: 50%;
+}
+
+main {   
+    width: 80%;
+    margin: auto;
+}
+
+h1 {
+    font-size: 3vw;
+    font-family: "Sour Gummy", sans-serif;
+    text-align: left;
+    padding-top: 1em;
+}
+
+
+h2, h3, p, span, a, form, label{
+    font-family: "Sour Gummy", sans-serif;
+    line-height: 1.4em;
+}
+
+header {
+    background-image: linear-gradient(#FFC7FF, white);
+    padding: 2vw 10vw;
+    color: black;
+}
+
+/*W3Schools.com. (n.d.-b). https://www.w3schools.com/accessibility/accessibility_skip_links.php*/
+.skip {
+    position: absolute;
+    left: -10000px;
+    top: auto;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+}
+
+/*W3Schools.com. (n.d.-b). https://www.w3schools.com/accessibility/accessibility_skip_links.php*/
+.skip:focus {
+    position: static;
+    width: auto;
+    height: auto;
+}
+
+
+.container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav a { 
+    background-color: white;
+    padding: 10px 20px;
+    border: 2px solid black;
+    border-radius: 50px;
+    font-size: 1.3vw;
+    color: black;
+    transition: all 0.5s ease;
+    text-decoration: none;
+    
+}
+
+nav a:hover {
+    color: white;
+    background-color: black;
+
+}
+
+nav a:active {
+    color: white;
+    background-color:black ;
+    transform: translateY(0.6em);
+}
+
+nav a:focus {
+    background-color:#ffd82b ;
+}
+
+nav ul {
+    list-style-type: none;
+    padding-left: 0;
+    display: flex;
+    flex-direction: row;
+    gap: 2em;
+    flex-wrap: wrap;
+}
+
+a.currentpage {
+    border: 2px solid black;
+    background-color: #ffd82b ;
+    color: black;
+    border-radius: 50px;
+    padding: 10px 20px;
+    font-weight: 800;
+}
+
+.flex-horizontaal {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 2em;
+    padding: 1.5em 0em;
+}
+
+.flex-horizontaal img, .flex-horizontaal iframe {
+    border-radius: 30px;
+}
+
+.omschrijving a {
+    font-size: 1.8vw;
+    font-weight: 700;
+    color:var(--clr);
+    text-decoration: underline;
+    transition: all 0.5s ease;
+}
+
+.omschrijving a:hover {
+    text-decoration: underline;
+    color: purple ; 
+}
+
+.omschrijving a:active {
+    transform: translateY(0.6em);
+}
+ 
+footer {
+    padding-top: 2em;
+}
+
+footer p{
+    padding: 0;
+}
+
+.privacy {
+    display: flex;
+    justify-content:space-between;
+    gap: 2em;
+    flex-direction: row;
+    background-image: linear-gradient(white,#FFC7FF);
+    color: black;
+    padding: 2vw 10vw;
+}
+
+.privacy ul{
+    list-style-type: none;
+}
+
+.privacy a{
+    padding-left: 0.25em;
+    color: black;
+    text-decoration: none;
+}
+
+.privacy a:hover {
+    color: black;
+    text-decoration: underline;
+}
+
+
+.flex-column {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.center-column{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2em;
+}
+
+
+.center-column a {
+    border: 2px solid var(--clr);
+    color: var(--clr);
+    border-radius: 50px;
+    padding: 10px;
+    text-decoration: none;
+    transition: all 0.5s ease;
+    
+}
+
+.center-column a:hover {
+    background-color: var(--clr);
+    color: var(--bg);
+    border-radius: 50px;
+    text-decoration: none;
+    padding: 10px;
+}
+
+.center-column a:active {
+    transform: translateY(0.6em);
+}
+
+.profiel {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--bg);
+    color: var(--clr);
+    border-radius: 30px;
+    border: 3px solid #ffd82b;
+    width: 20.5vw;
+}
+
+.profiel span {
+    padding: 1em 0.5em;
+    font-weight: 500;
+    font-size: 1.4vw;
+}
+
+.profiel p {
+    padding: 0.5em 1.5em 1.5em 1.5em;
+    text-align: center;
+    font-size: 1.2vw;
+}
+
+.profiel img {
+    border-radius: 30px 30px 0 0;
+}
+
+.profielimg {
+    width: 19.9vw;
+    
+}
+
+.delen-box {
+    margin: 2em auto;
+    border: 3px solid #ffd82b;
+    border-radius: 30px;
+    color: var(--clr);
+    background-color:  var(--bg) ;
+    text-align: center;
+    padding: 2em 1em 2em 1em;
+    width: 50%;
+}
+
+
+.delen-box a {
+    border: 2px solid #ffd82b;
+    background-color: white;
+    color: black;
+    border-radius: 50px;
+    padding: 10px;
+    text-decoration: none;
+    transition: all 0.5s ease;
+    line-height: 3em;
+}
+
+.delen-box a:hover {
+    background-color: #ffd82b;
+    color: black;
+    border: 1px solid white;
+    border-radius: 50px;
+    padding: 10px;
+}
+
+/*W3Schools.com. (n.d.-d). https://www.w3schools.com/css/css_form.asp*/
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 5px 12px;
+    box-sizing: border-box;
+    border: 1px solid var(--clr);
+    border-radius: 30px;
+    color: var(--clr);
+  }
+
+/*W3Schools.com. (n.d.-d). https://www.w3schools.com/css/css_form.asp*/
+input[type=submit] {
+    border: none;
+    color: var(--bg);
+    padding: 5px 10px;
+    border: 2px solid var(--bg); 
+    border-radius: 30px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 15px;
+    font-family: "Sour Gummy", sans-serif;
+}
+
+/*W3Schools.com. (n.d.-d). https://www.w3schools.com/css/css_form.asp*/
+input[type=submit]:hover{
+    background-color:var(--clr);
+    color:var(--bg);
+}
+
+/*W3Schools.com. (n.d.-d). https://www.w3schools.com/css/css_form.asp*/
+input[type=submit]:active {
+    transform: translateY(4px);
+}

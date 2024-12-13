@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link href="style.css" rel="stylesheet">
+</head>
+
+<body>
+    <header>  
+        <a href="#main" class="skip">Skip naar main content</a>
+        <div class="container">
+            <img src="contentimg/logo3.png" width="150" alt="logo">
+                <nav>
+                    <ul>
+                            <li><a class="currentpage" href="index.html">Home</a></li>
+                            <li><a href="over-ons.html">Over ons</a></li>
+                            <li><a href="overzicht.html">Afleveringen</a></li>  
+                    </ul>
+                </nav>
+            <div class="flex-column">
+                <p>Dark mode</p>
+                <label class="switch">
+                    <input type="checkbox" name="theme" value="dark" checked>
+                    <span class="slider round"></span>
+                </label>
+            </div>
+        </div>   
+    </header>
+
+    <main id="main">
+
+        <section>    
+            <h1>Stap in en luister mee!</h1>
+            <div class="flex-horizontaal">
+                <iframe width="580vw" height="300vw" src="https://www.youtube.com/embed/Chkr73xIOpw?si=q-hzg6GYBfkaRvC6" 
+                title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                <img src="contentimg/eigenbeeld.png" width="400vw" height="290vw" alt="groepfoto"> 
+            </div> 
+        
+            <h2>Welkom op Tuktuk Talk! </h2>
+            <br><p>Stap mee in onze tuktuk en luister naar de prachtige verhalen van Thailand en Indonesië. 
+            3 meiden met verschillende culturen en achtergrondverhalen, die samenkomen om de verhalen met elkaar te delen.
+            </p><br>
+        </section>
+
+        <section>
+            <h2>Populaire afleveringen</h2>
+            <div class="flex-horizontaal">
+                <div class="center-column">
+                <img src="contentimg/aflevering2.png" width="250vw" height="250vw" alt="aflevering2">
+                <a href="#">#S01E02 - Bali naar Bangkok</a>
+            </div>
+            <div class="center-column">
+                <img src="contentimg/aflevering3.png" width="250vw" height="250vw" alt="aflevering3">
+                <a href="#">#S01E03 - Twee culturen, Eén ziel</a>
+            </div>
+            <div class="center-column">
+                <img src="contentimg/aflevering4.png" width="250vw" height="250vw" alt="aflevering4">
+                <a href="#">#S01E04 - Smaken van de Archipel</a>
+            </div>
+            </div>
+        </section>
+
+        <section>
+            <h2>Engagement Producten</h2>
+            <div class="flex-horizontaal">
+                <div class="center-column">
+                <img src="contentimg/waaier.jpg" width="250vw" height="250vw" alt="waaier">
+                <a href="#">Waaier</a>
+            </div> 
+            <div class="center-column">
+                <img src="contentimg/rugzak.jpg" width="250vw" height="250vw" alt="rugzak">
+                <a href="#">Rugzak</a>
+            </div>
+            <div class="center-column">
+                <img src="contentimg/stokjes.jpg" width="250vw" height="250vw" alt="stokjes">
+                <a href="#">Eet stokjes</a>
+            </div>
+            </div>
+        </section>
+        <section>
+            <div class="center-column">
+                <p>Maak je account aan, ontvang je onze producten gratis!</p>
+                <form action="#">
+                  <label for="voorname">Voornaam *</label><br>
+                  <input type="text" id="voorname" name="voorname"><br><br>
+                  <label for="achtername">Achternaam *</label><br>
+                  <input type="text" id="achtername" name="achtername"><br><br>
+                  <label for="emailadres">E-mailadres *</label><br>
+                  <input type="text" id="emailadres" name="emailadres"><br><br>
+                  <label for="wachtwoord">Wachtwoord *</label><br>
+                  <input type="password" id="wachtwoord" name="wachtwoord"><br><br>
+                  <input type="submit"value="Account aanmaken">
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+    <div class="privacy">
+        <div class="flex-column">
+            <h3>Contact</h3>
+            <div class="privacy-link">
+                <p><img src="contentimg/iconemail.png" width="18" alt="email">
+                <a href="#">info@tuktuktalk.nl</a></p>
+            </div>
+            <div class="privacy-link">
+                <p><img src="contentimg/icontelefoon.png" width="18" alt="telefoon">
+                <a href="#">020 2345678</a></p>
+            </div>
+            <div class="privacy-link">
+                <p><img src="contentimg/iconadres.png" width="18" alt="adres">
+                <a href="#">Wibautstraat 2 <br> 1091GM Amsterdam</a></p>
+            </div>
+        </div>
+        <div class="flex-column">
+            <h3>Social media</h3>
+            <div class="privacy-link">
+                <p><img src="contentimg/iconyoutube.png" width="18" alt="youtube">
+                <a href="#">@tuktuktalk</a></p>
+            </div>
+            <div class="privacy-link">
+                <p><img src="contentimg/iconinstagram.png" width="18" alt="instagram">
+                <a href="#">@tuktuktalk</a></p>
+            </div>
+            <div class="privacy-link">
+                <p><img src="contentimg/iconx.png" width="18" alt="x">
+                <a href="#">@tuktuktalk</a> </p>    
+             </div> 
+        </div>
+        <div class="flex-column">
+            <ul>
+                <li> <a href="#">Copyright © 2024</a></li>
+                <li> <a href="#">Privacy</a></li>
+                <li> <a href="#">Disclaimer</a></li>
+                <li> <a href="#">Cookies</a></li>
+                <li> <a href="#">Bedrijfsinformatie</a></li>
+                <li> <a href="#">Voorwaarde en folders</a></li>
+            </ul> 
+        </div>
+    </div>
+    </footer>
+</body>
+</html>
